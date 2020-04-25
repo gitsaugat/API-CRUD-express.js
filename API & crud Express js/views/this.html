@@ -1,0 +1,27 @@
+
+{%extends 'base.html'%}
+{%block content%}
+<br>
+<br>
+
+<div class = "container" style="border: 0.5px solid lightgray; border-radius: 4px; ">
+<h1>{{posttitle}}</h1>
+<p>Posted  by <b>  {{author}} </b>on {{date}}</p>
+<p>{{desc}} </p>
+
+<br/>
+
+<form method="POST" action="/delete/{{postid}}" >
+    <a href = "/updatepost/{{postid}}" class="btn btn-success" >Update</a>
+
+    <button class="btn btn-danger">Delete</button>
+    <a href = "/posts" class="btn btn-primary float-right" > ⬅️ Back</a>
+
+</form>
+<br>
+<br>
+
+</div>
+<br><br>
+
+{%endblock%}

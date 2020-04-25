@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<br>
+<br>
+
+<form method="POST" class="form-group" action="/createpost">
+    <label>Title</label>
+    <input type="text" class = "form-control" name = "title" placeholder="title">
+    <label>Description</label>
+    <textarea class = "form-control" name = "desc">
+
+
+
+    </textarea>
+    <label>Author</label>
+    <input type="text" class = "form-control" name = "author" placeholder="eg: saugat ; ">
+    <br>
+    <input type="submit" class = "btn btn-primary" value="create post">
+
+</form>
+{%endblock%}

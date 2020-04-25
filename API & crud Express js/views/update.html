@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{%block content%}
+
+<br>
+<br>
+
+<form method="POST" class="form-group" action="/update/{{postid}}">
+    <label>Title</label>
+    <input type="text" class = "form-control" value = {{data.title}} name = "title" placeholder="title">
+    <label>Description</label>
+    <textarea class = "form-control" name = "desc">
+
+{{data.desc}}
+
+    </textarea>
+    <label>Author</label>
+    <input type="text" value="{{data.author}}" class = "form-control" name = "author" placeholder="eg: saugat ; ">
+    <br>
+    <input type="submit" class = "btn btn-primary" value="update post">
+
+</form>
+{%endblock%}
